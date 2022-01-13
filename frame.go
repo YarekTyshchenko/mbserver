@@ -7,6 +7,7 @@ type Framer interface {
 	Bytes() []byte
 	Copy() Framer
 	GetData() []byte
+	GetAddress() byte
 	GetFunction() uint8
 	SetException(exception *Exception)
 	SetData(data []byte)
